@@ -1,0 +1,58 @@
+{
+  "name": "dsh-web-search-brave",
+  "version": "1.0.0",
+  "description": "Brave Search provider for DeepSeek Harness (dsh): one model-agnostic provider on the official ctx.web seam, using your own Brave subscription key.",
+  "type": "module",
+  "main": "index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "cordis",
+    "cordis-plugin",
+    "brave",
+    "brave-search",
+    "web-search",
+    "search-provider",
+    "websearch",
+    "llm",
+    "agent"
+  ],
+  "author": "thomasly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasly/dsh-web-search-brave.git"
+  },
+  "homepage": "https://github.com/thomasly/dsh-web-search-brave#readme",
+  "bugs": {
+    "url": "https://github.com/thomasly/dsh-web-search-brave/issues"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

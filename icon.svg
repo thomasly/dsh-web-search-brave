@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Brave search">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FB6A3C"/>
+      <stop offset="1" stop-color="#D93A1C"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <circle cx="27" cy="27" r="12.5" fill="none" stroke="#ffffff" stroke-width="5"/>
+  <path d="M36.5 36.5 49 49" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M21 24.5h12M21 30h8" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+</svg>

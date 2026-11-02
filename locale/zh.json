@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Brave 搜索",
+    "description": "用你自己的 Brave Search API key 直连 Brave 搜索。注册在 ctx.web 搜索接缝上，所有模型都通过标准 web_search 工具使用它。"
+  }
+}

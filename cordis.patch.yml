@@ -1,0 +1,16 @@
+# Bundle patch for `dsh-web-search-brave`.
+#
+# Inserts the one row that registers the Brave Search provider into the running
+# `ctx.web` seam. Row ids here are bundle-local: the profile's own patch owns
+# `web.searchProvider`, and no row owned by an official bundle is re-declared
+# here (a duplicate id inside one layer fails the loader).
+#
+# Selection: the profile patch pins `web.searchProvider: brave-search`, which is
+# the id this provider registers by default. If another Brave provider must
+# coexist, change `providerId` here and the pin together.
+- insert:
+    - id: web-search-brave-local
+      name: dsh-web-search-brave
+      config:
+        providerId: brave-search
+        apiKeyEnv: BRAVE_API_KEY

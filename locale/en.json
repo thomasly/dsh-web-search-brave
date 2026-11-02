@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Brave Search",
+    "description": "Web search through the Brave Search API with your own subscription key. One provider on the ctx.web seam, so every model uses it through the standard web_search tool."
+  }
+}
