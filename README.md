@@ -223,7 +223,6 @@ dsh-web-search-brave/
 │   └── zh.json         插件管理页的中文标题/说明
 ├── icon.svg            插件图标
 ├── test/smoke.mjs      离线单测 + 真实 Brave 冒烟（无 key 时自动跳过在线部分）
-├── .github/workflows/  CI：语法检查 + 离线单测
 ├── README.md
 └── LICENSE
 ```
@@ -247,7 +246,7 @@ BRAVE_API_KEY=xxx npm test
 - 错误契约：缺 key、调用方取消分别抛正确的 code；
 - 在线冒烟：英文时效查询（检查 `publishedAt` 覆盖率）和中文查询（检查摘要非空）。
 
-GitHub Actions 在没配 key 的仓库里只跑离线部分，不会失败。
+没有 key 的环境里，在线部分会自动跳过，离线单测照常跑完，所以可以直接接 CI。
 
 发布前建议自己跑一遍：
 
